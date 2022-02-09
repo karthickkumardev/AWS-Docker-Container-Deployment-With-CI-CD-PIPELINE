@@ -1,0 +1,13 @@
+{"level":"info","timestamp":"2022-02-02T13:36:12.952Z"}
+{"level":"info","timestamp":"2022-02-02T13:37:08.159Z"}
+{"level":"info","timestamp":"2022-02-02T13:37:40.031Z"}
+{"level":"info","timestamp":"2022-02-02T13:38:45.230Z"}
+{"level":"info","timestamp":"2022-02-02T13:39:10.414Z"}
+{"level":"info","timestamp":"2022-02-02T13:40:49.109Z"}
+{"level":"info","message":{"Error Message":{}},"timestamp":"2022-02-02T13:44:35.282Z"}
+{"level":"info","message":{"Error Message":"TypeError: Car.findAll is not a function"},"timestamp":"2022-02-02T13:46:04.018Z"}
+{"level":"info","message":{"Error Message":"TypeError: Car.findAll is not a function","Request":"[object Object]"},"timestamp":"2022-02-02T13:47:14.534Z"}
+{"level":"info","message":{"Error Message":"TypeError: Car.findAll is not a function","Request":"[object Object]"},"timestamp":"2022-02-02T13:48:04.463Z"}
+{"level":"info","message":{"Error Message":"TypeError: Car.findAll is not a function","Request":"[object Object]"},"timestamp":"2022-02-02T13:48:08.519Z"}
+{"level":"info","message":{"Error Message":"TypeError: Car.findAll is not a function","Request":"/dealer/api/getcars"},"timestamp":"2022-02-02T13:50:31.592Z"}
+{"level":"info","message":{"Error Message":"TypeError: Car.findAll is not a function","Request":"/dealer/api/getcars"},"timestamp":"2022-02-02T13:50:33.509Z"}
