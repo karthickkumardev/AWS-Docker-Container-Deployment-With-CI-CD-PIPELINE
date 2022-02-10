@@ -2,23 +2,19 @@ let express = require('express');
 let app = express();
 require('dotenv').config();
 const db = require('./app/utils/db/db');
+const http = require('http');
 let cors = require('cors');
 app.use(cors({origin : 'http://localhost:4200'}));
 let bodyParser = require('body-parser');
 app.use(bodyParser.json());
 
 // let logger = require('./app/utils/logger/logger');
-const port = 8080;
-const HOST = '0.0.0.0';
 
 let dealerRoute = require('./app/routes/dealer');
 app.use('/dealer',dealerRoute);
 app.get('/', (req, res) => {
-    res.send('Hello World This aplllication is deployed through CI CD Pipeline');
+    res.status(200).send('Hello World This aplllication is deployed through CI CD Pipeline');
 });
-
-app.listen( port, HOST );
-console.log('Server Started in PORT : '+ HOST + ' : ' +  port);
 
 app.use( (err,req,res,next) => {
     if(err){
@@ -28,3 +24,5 @@ app.use( (err,req,res,next) => {
     }
     next();
 });
+
+module.exports = app;
