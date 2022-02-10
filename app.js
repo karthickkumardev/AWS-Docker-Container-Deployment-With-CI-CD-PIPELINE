@@ -14,7 +14,7 @@ const HOST = '0.0.0.0';
 let dealerRoute = require('./app/routes/dealer');
 app.use('/dealer',dealerRoute);
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Hello World This aplllication is deployed through CI CD Pipeline');
 });
 
 app.listen( port, HOST );
