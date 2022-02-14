@@ -4,7 +4,7 @@ phases:
     commands:
       - echo Logging in to Amazon ECR...
       - aws --version
-      - sudo pip install --upgrade awscli
+      - pip install --upgrade awscli
       # - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
       - $(aws ecr get-login-password --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=438806179757.dkr.ecr.us-east-1.amazonaws.com/test
