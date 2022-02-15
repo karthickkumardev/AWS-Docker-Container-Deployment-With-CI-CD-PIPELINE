@@ -12,8 +12,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # loads nvm bash_completion (node is in path now)
 
 #install node modules
-npm install 14.10.0
-
+nvm install 14.10.0
+nvm use 14.10.0
 
 #start our node app in the background
 node index.js > app.out.log 2> app.err.log < /dev/null & 
