@@ -1,8 +1,9 @@
 #!/bin/bash
 #Stopping existing node servers
 echo "Stopping any existing node servers"
-# pkill -9 node
-# exit 0
-# ps -ef | grep node | grep -v grep | awk '{print $2}' | xargs kill
+#ok
+pkill -9 node
 stat=`echo $?`
-echo $stat;
+if [ $stat -eq 1  ]; then
+  exit 0
+fi
