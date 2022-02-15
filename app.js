@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 let dealerRoute = require('./app/routes/dealer');
 app.use('/dealer',dealerRoute);
 app.get('/', (req, res) => {
-    res.status(200).send('Hello World This aplllication is deployed through CI CD Pipeline and Docker image');
+    res.status(200).send('Hello World This aplllication is deployed through CI CD Pipeline & normal code Deploy');
 });
 
 app.use( (err,req,res,next) => {
